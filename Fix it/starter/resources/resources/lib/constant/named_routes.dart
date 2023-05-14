@@ -8,6 +8,7 @@ class NamedRoutes {
   NamedRoutes() {
     exit(0);
   }
+
   static const splashScreen = 'splashScreen';
   static const onBoardScreen = 'onBoardScreen';
   static const homeScreen = '/';
@@ -104,12 +105,6 @@ class Buildcc extends BuildContext {
   }
 
   @override
-  T? getInheritedWidgetOfExactType<T extends InheritedWidget>() {
-    // TODO: implement getInheritedWidgetOfExactType
-    throw UnimplementedError();
-  }
-
-  @override
   // TODO: implement mounted
   bool get mounted => throw UnimplementedError();
 
@@ -122,7 +117,7 @@ class Buildcc extends BuildContext {
   Size? get size => throw UnimplementedError();
 
   @override
-  void visitAncestorElements(ConditionalElementVisitor visitor) {
+  void visitAncestorElements(bool Function(Element element) visitor) {
     // TODO: implement visitAncestorElements
   }
 
