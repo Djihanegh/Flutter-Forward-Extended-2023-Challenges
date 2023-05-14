@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
             routes: {
               NamedRoutes.splashScreen: (_) => SplashScreen(),
               NamedRoutes.onBoardScreen: (_) => const OnBoardScreen(),
-              'NamedRoutes.homeScreen': (_) => const HomeScreen(),
+              NamedRoutes.homeScreen: (_) => const HomeScreen(),
               NamedRoutes.detailScreen: (context) => DetailSurahScreen(
                   id: BlocProvider.of(context).state as int),
               NamedRoutes.bookmarkScreen: (context) => const BookmarkScreen(),
